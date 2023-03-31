@@ -1,0 +1,7 @@
+{
+    name: "React component with CSS module",
+    params: {
+        name: "Component's name",
+    },
+    open: "{{name}}/{{name}}.tsx",
+}

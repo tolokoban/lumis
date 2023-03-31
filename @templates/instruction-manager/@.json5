@@ -1,0 +1,7 @@
+{
+    name: "instruction Manager",
+    params: {
+        name: "Instruction short name (ex.: Const)",
+    },
+    open: "{{name}}.tsx",
+}

@@ -1,0 +1,54 @@
+.ViewInstructionNode {
+    font-family: sans-serif;
+    background-image: linear-gradient(to right, #0001, transparent);
+    border-radius: 1em;
+    --custom-instruction-color-back-fixed-children: hsl(100deg, 25%, 50%);
+    --custom-instruction-color-text-fixed-children: #000;
+    --custom-instruction-color-back-variable-children: hsl(60deg, 25%, 50%);
+    --custom-instruction-color-text-variable-children: #000;
+    --custom-instruction-color-back-no-children: hsl(1300deg, 25%, 50%);
+    --custom-instruction-color-text-no-children: #fff;
+}
+
+.ViewInstructionNode > main {
+    margin-left: 1em;
+}
+
+.ViewInstructionNode.selected > header {
+    box-shadow: 0 0 0 0.25em #000;
+    filter: brightness(130%);
+    cursor: default;
+    z-index: 1;
+}
+
+.ViewInstructionNode > header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5em;
+    color: var(--custom-instruction-color-text, #000e);
+    background-color: var(--custom-instruction-color-back, #9cd);
+    border-radius: 999vmax;
+    margin: 1px 0;
+    cursor: pointer;
+    z-index: 0;
+}
+
+.ViewInstructionNode > header > .svg {
+    width: 2em;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    backdrop-filter: saturate(200%);
+    box-shadow: 1px 0 2px #0007;
+}
+
+.ViewInstructionNode > header > .svg > svg {
+    height: 75%;
+    fill: currentColor;
+}
+
+.ViewInstructionNode > header > .summary {
+    flex: 1 1 auto;
+}
